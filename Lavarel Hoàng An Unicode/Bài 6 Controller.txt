@@ -1,0 +1,6 @@
+- Tạo controller:
+	+ Tạo thủ công:
+		* B1: Tạo 1 file php
+		* B2: Copy form có sẵn
+	+ Tạo bằng lệnh:
+		* Gõ lệnh: " php artisan make:controller <" tên file controller "> "

@@ -1,0 +1,14 @@
+- Database là gì ? Có những loại nào ? So sánh điểm mạnh yếu của các loại database.
+
+- Các chuẩn thiết kế database cho hệ thống 1NF, 2NF, 3NF là gì ?
+
+
+Áp dụng các chuẩn để thiết kế database cho hệ thống Quản lý nhân sự công ty với các chức năng chính
+( cần nêu rõ chỗ nào áp dụng theo chẩn nào ) : 
+
++ Login/ Logout dành cho nhân viên công ty và khách hàng login để xem tình hình nhân sự công ty 
++ Quản lý thêm sửa xóa nhân viên
++ Quản lý thêm sửa xóa khách hàng 
++ Quản lý thêm sửa xóa Project cho khách hàng 
++ Thêm người vào project theo các khoảng thời gian nhất định 
++ Báo cáo hằng ngày của nhân viên các công việc đã làm trong project đã được assign

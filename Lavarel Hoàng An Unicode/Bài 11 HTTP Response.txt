@@ -1,0 +1,22 @@
+- Http Response là gì ?
+	+ Ghi gửi request từ browse lên server sẽ được trả về 1 response cho browse để hiển thị nội dung cho người dùng
+	+ Laravel cung cấp nhiều phương thức để các Response.
+	+ Response trả về tại các Route hoặc các phương thức của Controller
+
+- HTTP Response cơ bản là trả về ngay tại các Route ở dạng chuỗi hoặc mảng
+	+ Trả về mảng thì mảng sẽ tự động trở thành chuỗi JSON
+
+- HTTP Response Instance 
+	+ Laravel đã cung cấp sẵn 1 class Response() ( giống như là class Request đã học )
+	+ Để sử dụng class, phải khởi tạo đối tượng từ lớp Response() hoặc sử dụng helper response() (nên sử dụng helper )
+	+ Thay đổi trạng thái Response('<" Data ">', <" Trạng thái ">)
+
+- Gán thông tin cho Header vào Response 
+	+ sử dụng thuộc tính header() của class Response() ;
+
+- Gán Cookie vào Response
+	+ Bước 1 : Thêm " use Illuminate\Http\Response; "
+	+ Bước 2 : Sử dụng thuộc tính cookie(Tên, Dữ liệu, thời gian sống ) của class Response() ;
+
+- Gán View vào Response
+	+ Bước 2 : Sử dụng thuộc tính view(Tên view, Dữ liệu, Trạng thái ) của class Response() ;

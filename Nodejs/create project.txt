@@ -1,0 +1,18 @@
+- Tạo 1 dự án js bằng cú pháp: " $ npm init " trong cmd của đường link đấy
+- Tạo thư mục src để chứa code
+- Tạo 1 file server.js để chứa code nguồn
+
+- Trong file server.js :
+	+ import express bằng " import express from express "
+	+ tạo 1 biến app bằng cú pháp " const app = express() "
+	+ tạo 1 biến port bằng cú pháp " const port = 8080 "
+	+ để app lắng nghe cổng bằng cú pháp " 
+	app.listen(port, () => {
+		console.log(`Example app listening at http://localhost:${port}`)
+	});
+ "
+
+- Tạo 1 thư mục views để chứa các file view engine 
+- Tạo 1 thư mục configs để chứa
+- Tạo 1 thư mục route bên trong thư mục src 
+- Tạo 1 thư mục controller bên trong thư mục src 

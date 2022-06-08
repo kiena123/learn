@@ -1,0 +1,157 @@
+- Blade Template là gì ?
+	+ Là 1 template Engine đơn gairn nhưng mạnh mẽ được cung cấp bởi Laravel
+	+ Blade không giới hạn trong việc sử dụng mã PHP đơn giản trong View
+	+ Tất cả các Blade View sẽ được biên dịch thành mã PHP và được lưu vào bộ đệm cho đến khi chúng được sửa đổi
+	+ Các file Blade View có phần mở rộng là " .blade.php " và được lưu vào thư mục " resources/views "
+
+- Tải Laravel Blade snippets trên vs code giúp code dễ hơn
+
+- Folder "layout" dùng để chứa view chung
+
+- Hiển thị dữ liệu :
+	+ Cú pháp 1:{{ $variable }} : Hiển thị dữ liệu dạng thực thể
+	+ Cú pháp 2:{!! $variable !!} : Hiển thị dữ liệu có biên dịch mã HTML
+	Lưu ý: Cú pháp trên có thể sử dụng toán tử 3 ngôi
+- Vòng lặp : 
+	+ For : 
+		* Cú pháp : "
+			@for( $i = 1; $i <= 10;$i++ )
+				{{ $i }}
+			@endfor
+		"
+	+ While : 
+		* Cú pháp : "
+			@while ( $condition )
+				# code
+			@endwhile
+		"
+	+ Foreach :
+		* Cú pháp : "
+			@foreach ( $dataArr as $key => $value )
+				{{ $key, $value }}
+			@endforeach
+		"
+	+ Forelse : là 1 phiên bản nâng cấp của foreach có kiểm tra mảng trống
+		* Cú pháp : "
+			@forelse ( $dataArr as $key => $value )
+				{{ $key, $value }}
+			@empty
+				# 
+			@endforeach
+		"
+
+- Câu điều kiện :
+ 	+ If : 
+		* Cú pháp : "
+			@if ( $condition )
+				# xử lý
+			@endif
+		"
+	+ If ... else ... : 
+		* Cú pháp : "
+			@if ( $condition )
+				# xử lý
+			@else
+				# xử lý
+			@endif
+		"
+	+ If ... else if ... else ... : 
+		* Cú pháp : "
+			@if ( $condition 1 )
+				# xử lý
+			@elseif ( $condition 2 )
+				# xử lý
+			@else
+				# xử lý
+			@endif
+		"
+	+ switch ... case ... :
+		* Cú pháp : "
+			@switch ( $i )
+				@case ( 1 )
+				@case ( 3 )
+					# xử lý
+					@break
+				@case ( 2 )
+					# xử lý
+					@break
+				@default
+					# xử lý
+			@endswitch
+		"
+- Viết mã php : 
+	Cú pháp : "
+		@php
+			# Câu lệnh
+		@endphp
+	"
+
+- Comment :
+	Cú pháp : "
+		{{-- Nội dung --}}
+	"
+- Không biên dịch ký tự trùng với tên biến 
+	+ 1 dòng thì thêm @ đằng trước
+	+ Nhiều dòng
+		Cú pháp : "
+			@verbatim
+				# Lệnh
+			@endverbatim
+		"
+
+- Include View
+	Cú pháp : "
+		@include('<" Ten view ">')
+		"
+
+- Tạo master layout : tạo file " app.blade.php " trong đường link thư mục " resources/views/layouts "
+	+ @extends(' <" Đường link ko có đuôi .blade.php"> ') : import master view
+	+ @section('<"Ten">')	@endsection :  nơi ghi nội dung động sẽ thay đổi trong master latout nếu có thể @yield('<" ten ">') trùng tên trong layout
+	+ @yield('<"Ten">') : 
+	+ @parent : khai báo sẽ kế thừa từ bên master layout không thì sẽ thay thế hoàn toàn
+
+- Hàm asset() : thẻ css động
+
+- Làm việc với Form :
+	+ @csrf : tạo 1 input hidden (ẩn) chứa csrf_token
+	+ @method(' PUT ') : tạo 1 input hidden (ẩn) chứa HTTP Method
+	+ @error(' name ') : Hiển thị error của form validate
+
+- Stack - Push - Prepend :
+	+ @stack('<"Ten">') : khai báo scripts động
+	+ @push('<"Ten">') @endpush : Dữ liệu của push sẽ cho vào @stack() cùng tên rồi sẽ thêm từ cuối
+	+ @prepend('<"Ten">') @endprepend : Dữ liệu của push sẽ cho vào @stack() cùng tên rồi thêm vào đầu
+
+- Tự định nghĩa directive thông thường : 
+	+ Viết ở trong Providers( trình khởi tạo ứng dụng) ở boot()
+		* Bước 1 : thêm vào Providers " use Illuminate\Support\Facades\Blade; "
+		* Bước 2 : thêm vào boot() " Blade::directive('<" Ten directive ">', function xử lý)  "  
+			date_create() 
+- Cache View
+	+ Folder mặc định " storage/framework/views "
+		* Cache View : php artisan view:cache
+		* Clear Cache View : php artisan view:clear
+		
+- Tự định nghĩa directive rẽ nhánh : 
+	+ Viết ở trong Providers( trình khởi tạo ứng dụng) ở boot()
+		* Bước 1 : thêm vào Providers " use Illuminate\Support\Facades\Blade; "
+		* Bước 2 : thêm vào boot() " Blade::if('<" Ten if ">', function logic )  "  
+		* Bước 3 : restart lại server " php artisan serve "
+
+- Component : khá giống section, include, ...
+	+ Tạo Component : " php artisan make:component Alert " hệ thống sẽ tạo class trong thư mục " app/View/Components "
+và view trong thư mục " resources/views/components "
+	+ Đăng ký component :
+		* Bước 1 : thêm vào Providers " use Illuminate\Support\Facades\Blade; "
+		* Bước 2 : thêm vào boot() " Blade::component('<" Ten component ">', class đã tạo ở trên )  " 
+	+ Gọi component : 
+		* Đơn : <x-<"tên đăng ký bên Service Provider ">/>
+		* Class : <x-<"url sau app/View/Components/ ">/>
+	+ Truyền dữ liệu vào component
+		* <x-<"tên component "> :<"tên các thuộc tính">=" <"value"> " /> hoặc 
+<x-<"tên component "> <"tên các thuộc tính">=" {{<"value">}} " /> nhưng phải khai báo tham số tại phương thức __construct() 
+bên " app/View/Components "
+		* Lưu ý :
+			Cần đặt class component là public
+			
+	

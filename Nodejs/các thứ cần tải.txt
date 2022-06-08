@@ -1,0 +1,25 @@
+App
+- Postman : "postman.com"
+
+Frameworks
+- Tải nodejs trên đường link: https://nodejs.org/en/
+- Tải express bằng cú pháp: " $ npm install express --save " và đọc thêm về nó tại https://expressjs.com/
+- Tải ejs bằng cú pháp: " $ npm install ejs " là view engines
+- Tải body-parser : 
+- Tải nodemon : tự động khởi động lại server khi lưu lại các sửa đổi 
+- Tải Babel : dịch cú pháp mới trong lúc code gồm
+	+ Tải @babel/core
+	+ Tải @babel/node 
+	+ Tải @babel/preset-env
+	+ Tạo file .babelrc cùng cấp với package.json rồi thêm vào "
+	{
+		"presets" : [
+			"@babel/preset-env"
+		]
+	}
+	"
+	+ Thêm vào scripts trong package.json start : "nodemon --exec ./node_modules/.bin/babel-node src/server.js"
+- Tải dotenv : 
+	+ để có thể sử dụng file .env
+	+ cú pháp : " npm i --save-exact dotenv@<'phiên bản'> " trong cmd
+- Tải msql2 : kết nối với mysql " npm install --save-exact mysql2 "

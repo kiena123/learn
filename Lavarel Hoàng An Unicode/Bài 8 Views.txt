@@ -1,0 +1,9 @@
+- File xử lý views thường ở trong thư mục views
+- khi sử dụng view thì sử dụng hàm 
+	+ c1: view(<'ten view'>,data là mảng) để load view vào
+		* c1: có thể sử dụng compact(<'ten bien'>) để gom biến thành mảng key =  tên mảng và value = value của biến
+		* c2: tạo mảng
+		* c3: trỏ vào with([<'ten key'> => <'bien'>,...]) từ hàm view()
+	+ c2: View::make(<'ten view'>,data là mảng) và có các cách truyền data như cách 1
+- Chuyển vể object view sang html trỏ đến phương thức render() của nó
+

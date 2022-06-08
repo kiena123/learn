@@ -1,0 +1,30 @@
+- Sử dụng :
+	+ Bước 1: Thêm " use Illuminate\Http\Request " vào file sử dụng
+	+ Bước 2: Khi sử dụng cần thêm Request vào trước biến trong function controller sẽ sử dụng nó
+- Các phương thức của class Request
+	+ $request->all() : Trả về 1 mảng chứa các biến của tất cả phương thức đã gửi
+	+ $request->path() : Trả về 1 chuỗi thuộc path( sẽ bỏ tên miền )
+	+ $request->is() : Trả về boolend kiểm tra đúng url ko và thêm "/*" nếu nhận cả các link con 
+	+ $request->url() : Trả về 1 chuỗi url trước dấu ?
+	+ $request->fullUrl() : Trả về 1 chuỗi url ( có cả query string )
+	+ $request->method() : Trả về 1 chuỗi về method
+	+ $request->isMethod() : Trả về boolend kiểm tra method
+	+ $request->ip() : Trả về 1 chuỗi ip
+	+ $request->server() : Trả về biến $_SERVER bị lượt bỏ 1 phần
+	+ $request->header() : Trả về mảng chứa thông tin header
+	+ $request->input() : Thông tin dữ liệu data trên url 
+	+ $request->name() : Thông tin dữ liệu query string tùy vào name
+
+	+ $request->query() : Thông tin dữ liệu query string
+	+ $request->has() : Trả về boolend kiểm tra có biến đã nhập trên query string ko
+	+ $request->flash() : Đưa tất cả dữ liệu của input vào session load lại sẽ tự xóa
+	+ $request->old() : Lấy dữ liệu của session đã được tạo từ $request->flash()
+	+ $request->file() : Lấy thông tin của file upload lên
+	+ $request->photo() : Lấy thông tin của file upload lên
+		* isValid() : Kiểm tra file đã upload thành công hay ko
+		* path() : Lấy path của file
+		* extension() : Lấy đuôi file
+		* store() : Di chuyển file trên thư mục tạm trên server về thư mục trên local
+		* storeAs() : như store() đồng thời đổi tên file
+		* getClientOriginalName() : Lấy tên gốc
+	+ $request->hasFile() : Kiểm tra file đã đẩy lên server chưa

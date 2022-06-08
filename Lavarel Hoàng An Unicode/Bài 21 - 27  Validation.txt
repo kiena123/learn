@@ -1,0 +1,23 @@
+- Tổng quan về Laravel :
+	+ Xác thực dữ liệu (validate) là công việc không thể thiếu trong lập trình khi nhận dữ liệu từ client
+	+ Laravel cung cấp nhiều phương thức để xác thực dữ liệu
+	+ Ngoài việc hỗ trợ rất mạnh việc sử dụng Validate, Laravel còn hỗ trợ rất mạnh việc phát triển, mở rộng 
+	+ Có 3 cách validate :
+		* validate() trong lớp Request()
+		* Sử dụng Form Request 
+		* Sử dụng lớp Validator()
+
+- Validation bằng phương thức validate() :
+	+ Bước 1 :  Khởi tạo Request() 
+	+ Bước 2 : Sử dụng cú pháp " $request->validate($rules, $messages) "
+		* $rules : là 1 mảng dữ liệu với key là các input name, value là các rule mà bạn muốn ràng buộc ví dụ 
+[ key => <" dữ liệu ">
+		* $messages ( không bắt buộc ) : là 1 mảng dữ liệu chứa nội dung thông báo
+Nếu ko thành công, Laravel sẽ tự động redirect ( trả về ) request trước kèm thông báo gán vào Flash Session.
+Nếu cần trả về các lỗi kiểu JSON, thêm header " Content-Type : appliacation/json "
+
+- Validation sử dụng Form Request 
+	+ Laravel cung cấp cho LTV lớp Validate riêng để dễ tái sử dụng, quản lý, nâng cấp được kế thừa từ FormRequest()
+bằng câu lệnh " php artisan make: request TenRequest "
+- Muốn thay đổi nội dung thông báo hãy bổ sung messages() 
+	+ Cách 1 : " return [ 'field.rule' =  ] "

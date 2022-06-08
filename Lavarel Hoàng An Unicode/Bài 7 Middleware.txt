@@ -1,0 +1,14 @@
+- File xử lý middleware thường ở trong thư mục middleware
+- Tạo middleware:
+	+ Tạo thủ công:
+		* B1: Tạo 1 file php
+		* B2: Copy form có sẵn
+	+ Tạo bằng lệnh:
+		* Gõ lệnh: " php artisan make:middleware <"Tên file middleware"> "
+- $next() : cho phép đi tiếp đến Controllers
+
+- Trong file Kernel.php:
+	+ Biến $middleware = [ v..v.. ] là 1 biến global(cục bộ)
+	+ Biến $middlewareGroups = [ 'web' => [v..v..],'api' => [v..v..] ]
+		* web : tất cả route liên quan đến web đều bị ảnh hưởng
+		* api: tất cả route liên quan đến api đều bị ảnh hưởng

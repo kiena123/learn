@@ -1,0 +1,23 @@
+- Tạo 1 file web.js bên trong thư mục route có : 
+	+ import express bằng " import express from 'express'; " 
+	+ Tạo 1 biến route bằng cú pháp " let router = express.Router(); "
+	+ tạo 1 biến initWebRoute bằng cú pháp " 
+	const initWebRoute = (app) => {
+		return app.use("/", router)
+	}
+	 "
+	+ nếu MVC sẽ thêm router bằng cú pháp " router.<'phương thức'>(<'đường dẫn'>,<'thuộc tính đã export từ controller'>) "
+bên trong initWebRoute trước return và không cần viết ngoặc vì nó đã tự động truyền dữ liệu từ thằng cha vào thằng con
+	+ nếu function thường ta sẽ viết thêm router bằng cú pháp " router.<'phương thức'>(<'đường dẫn'>,<'tên hàm xử lý'>(req,res)) " 
+bên trong initWebRoute trước return
+	+ export initWebRoute bằng " export default initWebRoute;"
+
+- trong file server.js thêm : 
+	+ import initWebRoute bằng " import initWebRoute from <'chuỗi đường dẫn'> "
+	+ Thêm callback sau callback của views
+
+- Trong thư mục controller sẽ chứa các file js để xử lý trong route
+
+- Trong file js của thư mục controller có : 
+	+ class có tên trùng với tên file js
+	+ xuất class ấy ra bên ngoài bằng " module.exports = <'tên class'> "

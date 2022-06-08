@@ -1,0 +1,32 @@
+- Route
+	+ là thành phần cần thiết và không thể thiếu khi làm việc với Framework
+	+ nó giúp định tuyến các url path tương ứng với các Controller, Action, View, Command Line tương ứng hoặc bất kỳ
+kỳ công việc nào ( trong phạm vi cho phép của Framework đó )
+
+- Các loại Route trong Laravel
+	+ Route web : Khai báo trong " routes/web.php "
+	+ Route api : Khai báo trong " routes/api.php "
+	+ Route console ( Command Line ) : Khai báo trong " routes/console.php "
+	+ Route channel ( Broadcast ) : Khai báo trong " routes/channel.php "
+
+- Các phương thức Route
+	+ " Route::get($path, $callback) " : Nhận request với phương thức GET
+	+ " Route::post($path, $callback) " : Nhận request với phương thức POST
+	+ " Route::put($path, $callback) " : Nhận request với phương thức PUT
+	+ " Route::patch($path, $callback) " : Nhận request với phương thức PATCH
+	+ " Route::delete($path, $callback) " : Nhận request với phương thức DELETE
+	+ " Route::options($path, $callback) " : Nhận request với phương thức OPTIONS
+	+ " Route::match($method, $path, $callback) " : Nhận request với nhiều phương thức được khai báo trong mảng 
+$method
+	+ " Route::any($path, $callback) " : Nhận request với tất cả phương thức
+
+	+ " Route::redirect($path, $redirectTo, $status) " : Nhận request sau đó chuyển hướng tới $redirectTo
+	+ " Route::view($path, $viewName, $data) " : Nhận request sau đó render ra veiw
+	+ " Route::prefix($path_prefix)->group($callback) " : Nhóm route với prefix xác định
+	+ " Route::get('path/{thamSo}',$callback) " : Lấy tham số tự động trên url
+	+ " Route::get('path/{thamSo}',$callback)->where('thamSo', $pattem) " : Ràng buộc thamSo với biểu thức chính quy
+	+ " Route::get('path/{thamSo}',$callback)->name('route_name') " : Đặt tên route để thuận tiện gọi url sau này
+	+ " route($name, $param) " : Hàm tạo url từ tên route
+	+ " Route::middleware($name)->group($callback) " : Thiết lập middleware cho route
+	+ " Route::domain('{subdomain}.unicode.vn')->group($callback) " : Xử lý request với tên miền phụ ( subdomain )
+	

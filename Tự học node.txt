@@ -1,0 +1,18 @@
+- Tải nodejs trên đường link: https://nodejs.org/en/
+- Tạo 1 dự án js bằng cú pháp: " $ npm init " trong cmd của đường link đấy
+- Tải express bằng cú pháp: " $ npm install express --save " và đọc thêm về nó tại https://expressjs.com/
+- Tải ejs bằng cú pháp: " $ npm install ejs " là view engines
+- Tải body-parser : 
+- Tải nodemon : 
+- Tải Babel : dịch cú pháp mới trong lúc code gồm
+	+ Tải @babel/core
+	+ Tải @babel/node 
+	+ Tải @babel/preset-env
+	+ Tạo file .babelrc cùng cấp với package.json rồi thêm vào "
+	{
+		"presets" : [
+			"@babel/preset-env"
+		]
+	}
+	"
+	+ Thêm vào scripts trong package.json start : "nodemon --exec ./node_modules/.bin/babel-node src/server.js"
