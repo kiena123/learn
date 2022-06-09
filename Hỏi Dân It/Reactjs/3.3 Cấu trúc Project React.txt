@@ -1,0 +1,35 @@
+- Tải project đã base sẵn của Hỏi Dân It tại " https://github.com/haryphamdev/react-basic-hoi-dan-it " 
+
+- inject : nhúng(nghĩa chính là tiêm)
+
+- Thứ tự chạy của project:
+	+ Chạy file html đầu tiên
+	+ webback sẽ dịch tất cả file js, scss và tự động nhúng vào html
+
+------ Tạo cấu trúc :  
+- Tải SCSS như trong file 3.0
+- Trong file src có : 
+	+ Tạo thư mục " assets " : Nơi cấu hình global ( file muốn public ra ngoài cho người ta xem )
+	+ Tạo thư mục " components " : Nơi chia sẻ source code ( nơi chứa những thứ có thể tái sử dụng được )
+	+ Tạo thư mục " routes " : Nơi định nghĩa các route
+	+ Tạo thư mục " services " : Nơi chứa các API
+	+ Tạo thư mục " store " : Nơi viết con Redux
+	+ Tạo thư mục " styles " : Nơi chứa các file scss
+	+ Tạo thư mục " utils " : Nơi chứa function dùng chung
+	+ Tạo thư mục " views " : Nơi chứa giao diện
+
+- Các file dành cho tester ( dev sẽ không cần nên ta sẽ Xóa )
+	+ là file " App.test.js "
+	+ file " setupTests.js "
+
+- Trong thư mục views sẽ:
+	+ cut file "App.js", "App.css", "logo.png" từ src vào
+	+ Đổi tên "App.css" thành "App.scss"
+	+ Sửa lại 
+
+- Trong thư mục styles sẽ:
+	+ cut file " index.css " từ src vào
+	+ Đổi tên " index.css " thành " global.scss "
+
+- Trong file file index.js của thư mục src : 
+	+ Sửa " import './index.css'; " thành " import './styles/global.scss'; "

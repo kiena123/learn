@@ -1,0 +1,5 @@
+1. Tại sao phải sử dụng React-DOM ?
+
+2. Tại sao phải tách React-DOM ra ?
+
+3. Render UI
