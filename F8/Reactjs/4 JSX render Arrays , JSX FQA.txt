@@ -1,0 +1,12 @@
+********** Câu hỏi thường gặp 
+- Tại sao khi code thuẩn dùng map phải join() ...
+	+ Vì đầu vào của children là 1 mảng với nhiều con trở lên nên đầu ra của map hợp lệ
+
+- Gặp lỗi khi render từ mảng (prop "key")
+	+ Là 1 waring tối ưu hiệu năng của React 
+	+ Sửa : chỉ cần thêm 1 prop là " key = <'giá trị ko trùng nhau '> "
+	
+
+- Không render được 2 elements cùng 1 lúc 
+	+ Cần 1 thẻ cha 2 elements
+	+ Sửa : Dùng thẻ " React.Fragment " do React tạo ra để bao thôi và ko sinh ra thẻ trong HTML

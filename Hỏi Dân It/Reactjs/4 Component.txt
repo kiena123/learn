@@ -1,0 +1,32 @@
+* JSX
+
+- JSX => return 1 khối thẻ html
+
+- Trong JSX có 1 cái thẻ đặc biệt khi ghi trong JSX sẽ ko hiển thị ở html là 
+	+ " <React.Fragment> </React.Fragment>" thường dùng nếu muốn trả về nhiều thẻ html mà ko có thằng bọc ngoài
+	+ nếu từ 16.8 trở lên cú pháp sẽ là " <>     </>"
+
+* Component
+
+- Component là : 
+	+ những viên gạch để xây dựng lên website của chúng ta
+	+ 1 hàm trả về 1 khối html(JSX)
+
+- Component có 2 loại chính :
+	+ class component : 
+	+ function component(function, arrow) : 
+
+- Tạo 1 file chứa component : 
+	+ tạo 1 file js
+	+ import thư viện React bằng cú pháp : " import React from 'react'; "
+	+ tạo 1 class như sau " class <'giống tên file'> extends React.Component {} "
+	+ Trong class thêm hàm render() có cú pháp như sau : " 
+	return (
+		<'Nội dung cần render ra giao diện'>	
+	)
+ "	
+	+ export theo cú pháp " export default <'giống tên file'>; "
+
+- 
+
+

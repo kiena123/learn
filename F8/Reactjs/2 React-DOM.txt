@@ -1,5 +1,15 @@
 1. Tại sao phải sử dụng React-DOM ?
+- Định nghĩa : 
+	+ Là cầu nối giữa React và Dom. 
+	+ Tạo ra React element rồi render vào Dom ra trình duyệt
+- React-Native -> iOS, Android
+
 
 2. Tại sao phải tách React-DOM ra ?
+- Khi thư viện React-Native ra đời -> nhận thấy có thể tách React-Native ra -> Còn lại là React-DOM
 
 3. Render UI
+- Bước 1 : Lấy root Từ html
+- Bước 2 : Sử dụng hàm render()
+	+ Với React@17 : ReactDom.render(elementReact, root)
+	+ Với React@18 : root.render(elementReact)

@@ -1,0 +1,3 @@
+- Event là 1 thuộc tính đặc biệt và giá trị của nó là 1 function về hành động khi goi event
+
+- Có thắc mắc hãy vào trang Doc của React để xem chi tiết

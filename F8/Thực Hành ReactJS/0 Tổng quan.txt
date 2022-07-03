@@ -1,0 +1,16 @@
+********** Tiktok clone là gì ? **********
+- Clone lại trang " https://www.tiktok.com/ "
+
+
+********** Sử dụng API ở đâu ? **********
+- F8 cấp cho các bạn ( lưu ý )
+	+ Giới hạn dung lượng, số lượng videos tải lên
+	+ Hoàn thành bài học trên fullstack.edu.vn
+
+********** Công cụ sử dụng ? **********
+- Công cụ sử dụng ?
+	+ VS Code
+	+ React 18
+
+********** Deploy ở đâu ? **********
+- Github page, Gitlab page, vvv

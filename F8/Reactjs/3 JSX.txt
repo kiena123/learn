@@ -1,0 +1,15 @@
+- JSX -> Javascript XML
+
+	1. Luôn dùng React.createElement() ? Vấn đề ?
+- Khó để code được nhiều element 
+
+	2. JSX ? Live demo: https://bit.ly/2VOIMN7
+- 
+
+	3. JSX không phải là HTML, Cần có Javascript, Babel để dùng JSX
+- Babel là 1 thư viện Javascript, nó chuyên về phân tích và chuyển đổi cú pháp
+- JSX linh động trong việc viết đan xen Javascript
+
+	4. JSX và React-DOM ? 
+- Thêm " type='text/babel' " vào thẻ script 
+- Trả về 1 thẻ script trên thẻ head

@@ -1,0 +1,9 @@
+	1. React element types
+- Hỗ trợ nhiều types : string, function và class 
+- Type hỗ trợ function và class vì :
+	+ Tư tưởng chia component
+	+ wrapper lại thành 1 ứng dụng hoàn chỉnh 
+
+- Khi nào dùng function component, class component ?
+	+ class component khi cần sử dụng tính kế thừa của nó cho dễ hơn 
+	+ không thì sử dụng function component 
