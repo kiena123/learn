@@ -1,0 +1,13 @@
+********	1. Tác dụng
+
+- Lưu các giá trị qua 1 tham chiếu bên ngoài function component
+
+- Không bị underfine sau khi load lại component khi viết trong function component
+
+- Là 1 hàm trả ra 1 object có thuộc tính là " current "
+
+********	2. Kiến thức khác
+
+- Trong JSX có thuộc tính ref trả về chính nó vào biến useRef()
+
+- Trong Javascript có thuộc tính getBoundingClientRect() : để lấy vị trí hiện tại của Element 

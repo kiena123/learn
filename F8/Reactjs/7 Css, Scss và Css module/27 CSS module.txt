@@ -1,0 +1,12 @@
+- Bước 1:  import bằng cú pháp " import style  form <' link file css duoi .module.css '> "
+
+- Bước 2 : Khi dùng thì truyền bằng cái object " style.<tên className> "
+
+
+- Ưu điểm : 
+	+ Không bị trùng tên css
+	+ Khi không import file module css thì sẽ gở và không gây thừa bộ nhớ css
+
+- Nhược điểm : 
+	+ Không được dùng tagname, * , ...
+	+ Không kế thừa được

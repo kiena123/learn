@@ -1,0 +1,16 @@
+********	forwardRef
+
+- import là " import { forwardRef } from 'react' "
+
+- Bao component ở phần export
+
+- Sinh ra 1 prop ref ở đối số function component
+
+
+********	useImperativeHandle Hook 
+
+- useImperativeHandle dùng để tùy chỉnh ‘ref’ của một function component ( để bảo toàn tính đóng gói )
+
+- Cú pháp : useImperativeHandle( <'biến ref forwardRef'>, () => {
+	// Những xử lý bên ngoài được dùng
+} )

@@ -1,0 +1,14 @@
+********	
+
+- Bước 1 : Create context 
+	+ import bằng cú pháp " import { createContext } from 'react' "
+	+ Tạo 1 biến từ hàm createContext() 
+- Bước 2 : Provider
+	+ là React Element nên có thể làm JSX
+	+ Trong thẻ biến Create context đến Provider có thuộc tính " value " và các thẻ con của nó có thể nhận được
+		 " value " này
+- Bước 3 : Consumer
+	+ Là thuộc tính nhận value từ thẻ cha Provider
+	+ import bằng cú pháp " import { useContext } from 'react' "
+	+ import bằng cú pháp " import { <'Biến từ hàm createContext() '> } from <'link thẻ cha'>"
+	+ nhận value của thẻ cha bằng cú pháp " useContext(<' biến đã import '>) "

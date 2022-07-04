@@ -1,0 +1,3 @@
+- One-way binding trong React : Ràng buộc 1 chiều 
+	+ Là chiều tương tác với dữ liệu 
+	+ chiều dữ liệu
