@@ -1,0 +1,42 @@
+
+- Bước 1 : npm install babel-plugin-module-resolver -D
+
+- Bước 2 : Tạo 1 file " .babelrc " có nội dung "
+{
+    "plugins": [
+        [
+            "module-resolver",
+            {
+                "alias": {
+                    "~": "./src"
+                }
+            }
+        ]
+    ]
+}
+
+"
+
+- Bước 3 : Tạo 1 file " jsconfig.json " có nội dung "
+{
+	"compilerOptions": {
+		"baseUrl" : ".",
+		"path" : {
+			"~/*" : ["src/*"]
+		}
+	}
+}
+"
+
+- Bước 4 : Sửa file " config-overrides.js " thành "
+const { override, useBabelRc } = require("customize-cra");
+
+module.exports = override(
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    useBabelRc()
+);
+
+
+"
+
+
