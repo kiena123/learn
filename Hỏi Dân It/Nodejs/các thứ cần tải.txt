@@ -8,9 +8,9 @@ Frameworks
 - Tải body-parser : " $ npm install body-parser "
 - Tải nodemon : " $ npm install --save-dev nodemon " tự động khởi động lại server khi lưu lại các sửa đổi 
 - Tải Babel : dịch cú pháp mới trong lúc code gồm
-	+ Tải @babel/core
-	+ Tải @babel/node 
-	+ Tải @babel/preset-env
+	+ Tải @babel/core : " npm install --save-dev @babel/core "
+	+ Tải @babel/node : " npm install --save-dev @babel/node "
+	+ Tải @babel/preset-env : " npm install --save-dev @babel/preset-env "
 	+ Tạo file .babelrc cùng cấp với package.json rồi thêm vào "
 	{
 		"presets" : [
