@@ -1,0 +1,10 @@
+- Visual studio code có thể tải thêm :
+	+ Formate: CSS/LESS/SCSS formatter
+	+ Material Icon Theme
+	+ Version Lens
+
+- Nodejs 
+
+- Git
+
+- SCSS bằng cú pháp " npm i --save scss " vào CMD của thư mục react-app 

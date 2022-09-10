@@ -1,0 +1,6 @@
+- Bước 1 : Cú pháp " npm install react@latest react-dom@latest "
+- Bước 2 : Sửa file index.js " ReactDOM.render(<App />, document.getElementById('root')) " thành "
+	const root  = ReactDOM.createRoot(document.getElementById('root'))
+	root.render(<App />)
+"
+- Bước 3 : Sửa file index.js " import ReactDom from 'react-dom' " thành " import ReactDom from 'react-dom/client' "

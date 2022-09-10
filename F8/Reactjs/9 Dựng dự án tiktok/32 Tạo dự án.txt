@@ -1,0 +1,11 @@
+********** Tạo dự án
+- Bước 1 : Cmd vào thư mục cần tạo Reactjs 
+- Bước 2 : Gõ cú pháp " npx create-react-app <'tên dự án'> " nếu có thì chọn yes
+- Bước 3 : Gõ cú pháp " cd <'tên dự án'> " để vào dự án
+- Bước 4 : Gõ cú pháp " npm start " để khởi động dự án
+
+********** Sửa lỗi trùng cổng
+- Bước 1 : vào thư mục <'tên dự án'>
+- Bước 2 : tạo 1 file " .env.local " để chứa các biến local mình tạo
+- Bước 3 : Thêm 1 biến môi trường " PORT=<' số cổng '> "
+

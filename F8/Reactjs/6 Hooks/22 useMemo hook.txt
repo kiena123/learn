@@ -1,0 +1,7 @@
+********	Cách sử dụng 
+
+- Giống với useEffect
+
+- Tránh thực hiện lại 1 logic nào đó không cần thiết
+
+- Đối số 1 : callback, Đối số 2 : mảng deps

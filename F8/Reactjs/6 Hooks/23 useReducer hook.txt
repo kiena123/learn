@@ -1,0 +1,15 @@
+********	Dùng khi nào ?
+
+- phù hợp với State phức tạp 
+	+ mảng nhiều chiều
+	+ nhiều useState phụ thuộc nhau 
+	...
+
+********	Các bước khi muốn khởi tạo 
+
+- Init state :  
+- Actions : Tên biến phải full Hoa và cách nhau bởi dấu " _ " 
+- Tạo Reducer : là function xử lý 
+- Dispatch
+
+-> cú pháp : [ <' biến '>, <' dispatch '> ] = useReducer( <' reducer '>, <' initState '> )

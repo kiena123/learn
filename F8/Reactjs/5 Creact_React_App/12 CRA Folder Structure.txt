@@ -1,0 +1,2 @@
+- Tải serve bằng cú pháp " npm i -g serve " 
+- Để chạy folder build lên server = " serve -s build "

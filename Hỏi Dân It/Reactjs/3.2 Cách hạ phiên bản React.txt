@@ -1,0 +1,23 @@
+- Vào file package.json để sửa:
+	+ "react" từ "18.0.0" thành "17.0.2" 
+	+ "react-dom" từ "18.0.0" thành "17.0.2" 
+
+- index.js để sửa:
+	+ sửa " import ReactDOM from 'react-dom/client' " thành " import ReactDOM from 'react-dom' "
+	+ Sửa " 
+	const root = ReactDOM.createRoot(document.getElementById("root"));
+	root.render(
+		<React.StrictMode>
+			<App />
+		</React.StrictMode>
+	);
+	" Thành " 
+	ReactDOM.render(
+		<React.StrictMode>
+			<App />
+		</React.StrictMode>,
+		document.getElementById("root")
+	);
+	"
+
+- 

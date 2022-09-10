@@ -1,0 +1,36 @@
+*******		Hooks
+- Gắn vào component 
+- là những hàm được viết sẵn bởi javascript có tính tăng cụ thể để sử dụng 
+
+- phải import trước khi sử dụng "
+	import {
+	useState,
+	useEffect,
+	useLayoutEffect,
+	useRef,
+	useCallback,
+	useMemo,
+	useReducer,
+	useContext,
+	useImperativeHandle,
+	useDebugValue,
+} from 'react'
+"
+
+- Chỉ dùng cho function component
+
+- Component đơn giản và trở nên dễ hiểu
+	+ Không bị chia logic ra như methods trong lifecycle( vòng đời ) của Class Component
+	+ Không cần dùng " this "
+
+- Sử dụng Hooks khi nào ?
+	+ Dự án mới => Hooks
+	+ Dự án cũ :
+		Component mới => Function component + Hooks
+		Component cũ => giữ nguyên tối ưu sau
+	+ Logic nghiệp vụ cần sử dụng tính chất của OOP => Class component 
+
+- Người mới nên bắt đầu với Function component hay Class component ?
+
+- Có kết hợp sử dụng Function component và Class component được ko ?
+	+ Được

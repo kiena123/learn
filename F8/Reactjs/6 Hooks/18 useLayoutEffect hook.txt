@@ -1,0 +1,11 @@
+********	1. Khái niệm
+
+- Khá giống như useEffect nhưng xử lý bất đồng bộ
+
+********	2. Bước thực hiện 
+
+- Bước 1 : Cập nhật lại state
+- Bước 2 : Cập nhật lại DOM	( mutated )
+- Bước 3 : Gọi cleanup nếu deps thay đổi ( sync - Đồng bộ )
+- Bước 4 : Gọi useLayoutEffect callback ( sync - Đồng bộ )
+- Bước 5 : Render lại UI

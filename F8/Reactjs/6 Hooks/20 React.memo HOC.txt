@@ -1,0 +1,9 @@
+********	1. memo()
+
+- Là Higher Order Component ( HOC ) chứ ko phải là Hooks
+
+- Xử lý component tránh bị re-render không cần thiết
+
+- Thêm memo() ở chỗ export
+
+********	2. Khi nào dùng memo()

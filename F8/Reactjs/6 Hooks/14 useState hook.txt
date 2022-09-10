@@ -1,0 +1,19 @@
+********	useState ( trạng thái )
+
+- Là trạng thái cảm súc của dữ liệu
+
+	2. Dùng khi nào ?
+- Khi muốn dữ liệu thay đổi thì giao diện tự động cập nhật ( render lại dữ liệu )
+
+	3. Cách dùng
+- Bước 1 : import theo cú pháp " import { useState } from 'react' "
+- Bước 2 : trong function component thêm " const [ state, setState ] = useState(initState) "
+	+ state được gắn = giá trị của initState
+	+ setState : là 1 hàm dùng để set lại state 
+
+	4. Lưu ý 
+- Component được re-render sau khi ' setState '
+- Initial state chỉ dùng cho lần đầu 
+- Set state với callback ?
+- Initial state với callback ?
+- Set state là thay thế state bằng giá trị mới 

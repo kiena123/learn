@@ -1,0 +1,50 @@
+********	1. Kiến thức cần có
+
+- Events : Add / remove event listener
+- Observer pattern : Subscribe / Unsubscribe
+- Closure
+- Timers : setInterval, setTimeout, clearInterval, clearTimeout
+- useState
+- Mounted / Unmounted
+- ===
+- Call API (API free : jsonplaceholder )
+
+********	2. Lí thuyết
+
+- Callback luôn được gọi sau khi component mounted
+- useEffect sinh ra để xử lý " side effect " ( sử dữ liệu bên cạnh UI)
+- ưu tiên chạy UI cho người dùng trước
+
+- Cleanup function luôn được gọi trước khi component unmounted
+- Cleanup function luôn được gọi trước khi callback được gọi ( trừ lần mounted )
+
+- Có 3 trường hợp : 
+	+ useEffect(callback)		(ít dùng)
+		Gọi callback mỗi khi component re-render
+		Gọi callback sau khi thêm component vào DOM
+
+	+ useEffect(callback, [])
+		Chỉ gọi callback 1 lần sau khi component mounted 	
+	
+	+ useEffect(callback, [deps])
+		Callback được gọi lại mỗi khi deps bị thay đổi
+
+********	3. Bước thự hiện
+
+- Bước 1 : Cập nhật lại state
+- Bước 2 : Cập nhật lại DOM
+- Bước 3 : Render lại UI
+- Bước 4 : Gọi cleanup nếu deps thay đổi 
+- Bước 5 : Gọi useEffect callback
+
+********	4. Ví dụ
+
+- Update DOM
+	+ F8 blog title
+- Call API
+- Listen DOM events
+	+ Scroll
+	+ Resize
+- Cleanup
+	+ Remove listener / Unsubscribe
+	+ Clear timer

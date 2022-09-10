@@ -1,0 +1,27 @@
+******	Phần I
+- Xử lý Dom events
+	+ Giống như với HTML nhưng không viết tắt 
+
+- Component do chúng ta định nghĩa phải viết in hoa kí tự đầu
+
+- Chọn component trong 1 object 
+	+ " <'ten object '>.<'ten component'>"
+	+ JSX không hỗ trợ cú pháp " <'ten object '>[<'ten biến chứa tên component'>] "
+		nên tạo 1 component mới gán  = " <'ten object '>[<'ten biến chứa tên component'>] "
+
+- Booleans, Null & Undefined không được render
+
+- Kết hợp toán tử logic để render theo điều kiện 
+
+
+******	Phần II
+
+- Props trong JSX
+
+- Props default to "true"
+
+- Spread/Rest props
+
+- Children prop
+
+- Render props

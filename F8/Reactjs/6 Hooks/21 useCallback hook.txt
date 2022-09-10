@@ -1,0 +1,7 @@
+
+- Mỗi lần re-render thì kiểu dữ liệu tham chiếu( Reference types ) sẽ khác nhau ( khởi tạo lại ) nên memo vẫn 
+	cho re-render 
+
+- Thường đi cùng React memo()
+
+- useCallback giúp giảm khởi tạo hàm mới 1 cách không cần thiết

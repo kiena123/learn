@@ -1,0 +1,5 @@
+- Chuyển đổi version node bằng " nvm use <'phiên bản'> "  
+
+- Tạo React app : 
+	+ " npx create-react-app <'tên app'> "
+	+ để cmd vào trong thư mục react-app vừa tạo để khởi động " npm start " 

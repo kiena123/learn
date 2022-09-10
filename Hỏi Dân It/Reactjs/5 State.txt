@@ -1,0 +1,2 @@
+State : 
+	+ là những dữ liệu có thể bị thay đổi, khi nó thay đổi thì trang web sẽ được update lại mà ko cần tải lại trang

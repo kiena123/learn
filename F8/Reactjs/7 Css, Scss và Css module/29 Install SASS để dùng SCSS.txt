@@ -1,0 +1,2 @@
+- Bước 1 : install Scss " npm install sass " or " yarn add sass "
+- Bước 2 : Tắt server 

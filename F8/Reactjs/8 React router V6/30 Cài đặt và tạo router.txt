@@ -1,0 +1,22 @@
+********	1. Routes, Route
+
+- Routes (thằng cha) dùng để nhóm các Route lại với nhau
+
+- Nhớ phải import " import { Routes, Route } from 'react-router-dom' " để sử dụng
+
+- JSX Routes đặt ở nơi sẽ thay đổi khi chuyển trang ( Định tuyến )
+
+- JSX Route đặt ở bên trong thằng cha có 
+	+ thuộc tính " path = <'Tuyến đường'> "
+	+ thuộc tính " element = { <'JSX component ( React element )'> } "
+
+********	2. Link
+
+- JSX Link dùng để thay thế cho thẻ a để không bị load trang khi chuyển tuyến đường
+
+- Sử dụng : 
+	+ Bước 1 : import bằng cú pháp " import { Link } from 'react-router-dom' "
+	+ Bước 2 : Dùng để thay thế cho thẻ a 
+	+ Bước 3 : thêm thuộc tính " to " thay thế cho thuộc tính " href " của thẻ a
+
+- Chú ý : khi truy cập trang web ngoài thì dùng thẻ a như bình thường

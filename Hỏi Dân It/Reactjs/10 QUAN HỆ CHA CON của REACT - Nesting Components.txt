@@ -1,0 +1,2 @@
+- Đa số react thường hay dùng khái niệm cha con
+- Thằng cha có thể truyền dữ liệu cho thằng con nhưng thằng con ko thể truyền dữ liệu cho thằng cha

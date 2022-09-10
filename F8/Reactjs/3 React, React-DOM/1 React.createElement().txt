@@ -1,0 +1,14 @@
+1. React.createElement() 
+	+ sẽ trả về 1 đối tượng là React element
+	+ React element là thành phẩn nhỏ nhất khi làm việc với React
+	+ Cú pháp :" React.createElement(<'type thẻ'>, <thuộc tính của thẻ>, <'con thứ 1 của thẻ'>, ..., 
+			<'con thứ n của thẻ'>) "
+
+2. So sánh với document.createElement() -> DOM element
+
+3. Thay đổi Id, className, style, ... 
+	- Tất cả đều là property( thuộc tính ) nên thêm vào chỗ thuộc tính
+
+4. Thêm : text, html
+	- text : thêm vào phần con 
+	- html : chuyển html thành React element xong cho vào phần con của thẻ
