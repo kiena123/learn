@@ -5,8 +5,8 @@ Frameworks
 - Tải nodejs trên đường link: https://nodejs.org/en/
 - Tải express bằng cú pháp: " $ npm install express --save " và đọc thêm về nó tại https://expressjs.com/
 - Tải ejs bằng cú pháp: " $ npm install ejs " là view engines
-- Tải body-parser : 
-- Tải nodemon : tự động khởi động lại server khi lưu lại các sửa đổi 
+- Tải body-parser : " $ npm install body-parser "
+- Tải nodemon : " $ npm install --save-dev nodemon " tự động khởi động lại server khi lưu lại các sửa đổi 
 - Tải Babel : dịch cú pháp mới trong lúc code gồm
 	+ Tải @babel/core
 	+ Tải @babel/node 
