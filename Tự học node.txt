@@ -16,3 +16,4 @@
 	}
 	"
 	+ Thêm vào scripts trong package.json start : "nodemon --exec ./node_modules/.bin/babel-node src/server.js"
+- Tải cookie-parser để xử lý cookie bên backend " npm i --save cookie-parser "
