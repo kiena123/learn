@@ -1,0 +1,37 @@
+0. Link video : " https://www.youtube.com/watch?v=Sq_Qt8PWf_Y&list=PLeS7aZkL6GOvCz3GiOtvtDXChJRuebb7S "
+
+1. Redux là gì? Kiến trúc ra sao ?
+	- Redux is a predictable state container for Javascript apps
+		+ Là thư viện javascript giúp quản lý state, mà state có thể dự doán được 
+		+ Sự dụng kiến trúc uni-directional data flow ( data 1 chiều: Store -> View -> Actions -> Store ) 
+			. Trong Store có Dispatcher, Reducer, State
+	- Actions :
+		+ Gồm 2 giá trị là " type ", " payload " ( giá trị State )
+
+	- Reducer : 
+		+ Là 1 function có tham số đầu vào là State hiện tại và Actions từ Dispatcher, trả về State mới
+		+ Giúp dự đoán được State mới ( vì cùng 1 State , cùng 1 Actions đầu vào sẽ luôn ra cùng 1 State mới )
+
+2. Khi nào cần dùng Redux ? 
+	- Dữ liệu được sử dụng ở " nhiều nơi "
+	- Có hỗ trợ chức năng " undo / redo "
+	- Cần " cache dữ liệu " để tái sử dụng lần nữa 
+	- Chú ý : Nếu app đang chạy tốt mà không có Redux, vậy có thể app đó không cần tới Redux
+
+3. Redux có phải chỉ dùng với Reactjs hay ko ?
+	- Không. Nó được sử dụng cho các javascript apps.
+	- Có thể là :
+		+ ReactJs
+		+ Angular
+		+ VueJs
+		+ Pure javascript App
+		+ Other javascript App
+
+4. Thực hành 
+	* Xây dựng 
+		- Bước 1 : Tạo 1 function Reducer
+			+ switch có đầu vào là action.type và đầu ra là State mới 
+		- Bước 2 : Tạo store bằng hàm " createStore " với đầu vào là Reducer từ bước 1 sẽ có phương thức : 
+			+ subscribe() : khi State thay đổi sẽ thực hiện đầu vào của nó 
+			+ dispatch() : Store sẽ thực hiện Actions ( javascript object ) đầu vào 
+			+ getState() : Đưa ra State hiện tại 

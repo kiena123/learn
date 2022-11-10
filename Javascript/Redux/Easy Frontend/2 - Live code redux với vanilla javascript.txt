@@ -1,0 +1,6 @@
+1. Link video : " https://www.youtube.com/watch?v=HOrA-uzZpw8&list=PLeS7aZkL6GOvCz3GiOtvtDXChJRuebb7S&index=2 "
+
+2. Chú ý :
+	- Link CDN của Redux: " https://unpkg.com/redux@4.0.5/dist/redux.js "
+	- Kiểm tra xem web có redux chưa là " window.Redux "
+	- Khi làm việc với array, object phải cho giá trị ra biến mới ( không thì sẽ bị lỗi về tham chiếu )

@@ -1,0 +1,5 @@
+
+	- Tạo GlobalStyles component
+   	- Cài thư viện SASS npm i -D sass
+    	- Reset CSS
+    	- Default CSS font-family, font-size, line-height
