@@ -3,9 +3,10 @@
 - Tạo 1 file server.js để chứa code nguồn
 
 - Trong file server.js :
-	+ import express bằng " import express from express "
+	+ import express bằng " import express from 'express' "
 	+ tạo 1 biến app bằng cú pháp " const app = express() "
 	+ tạo 1 biến port bằng cú pháp " const port = 8080 "
+	+ " app.use(express.urlencoded({ extended : true })) " và " app.use(express.json()) "
 	+ để app lắng nghe cổng bằng cú pháp " 
 	app.listen(port, () => {
 		console.log(`Example app listening at http://localhost:${port}`)

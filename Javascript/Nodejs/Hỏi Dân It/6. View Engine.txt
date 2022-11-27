@@ -1,9 +1,9 @@
 - Tạo 1 file viewEngine.js trong folder <"config">
 
 - Trong file viewEngine.js : ghi
-	+ " import express from "express"
+	+ " import express from 'express' "
 	+ tạo 1 biến theo cú pháp "
-	configViewEngine = (app) => { 
+	const configViewEngine = (app) => { 
 		app.set('view engine','ejs');
 		app.set('views','./src/views');
 	}

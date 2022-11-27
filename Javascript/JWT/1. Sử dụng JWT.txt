@@ -1,0 +1,13 @@
+0. Link : 
+	+ video : " https://www.youtube.com/watch?v=AXinuiR2PCo&list=PLodO7Gi1F7R1GMefX_44suLAaXnaNYMyC&index=15 "
+	+ jquery : " https://jquery.com/download/ "
+
+1. Cần phải có khi sử dụng jwt : 
+	- Tải jsonwebtoken "  " và import " import jwt from 'jsonwebtoken' "
+	- Tải cookie-parser để đọc cookie ( là 1 middleware ) bằng " npm install cookie-parser " 
+	- Bước 3 : 
+	- Bước 4 : gửi lên client 
+
+2. Các câu lệnh có trong jwt : 
+	- " let token = jwt.sign(<' object dữ liệu dùng để thành chữ ký '>, <' chuỗi key(mật khẩu) của jwt '>) " để tạo jsonwebtoken
+	- dùng jwt.verify(<' token cần xác thực '>, <' chuỗi key(mật khẩu) của jwt '>) để giải mã token

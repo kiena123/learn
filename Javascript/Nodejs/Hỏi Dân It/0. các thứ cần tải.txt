@@ -1,12 +1,14 @@
+Các biến res : " https://www.tutorialspoint.com/nodejs/nodejs_response_object.htm "
+
 App
 - Postman : "postman.com"
 
 Frameworks
 - Tải nodejs trên đường link: https://nodejs.org/en/
-- Tải express bằng cú pháp: " $ npm install express --save " và đọc thêm về nó tại https://expressjs.com/
-- Tải ejs bằng cú pháp: " $ npm install ejs " là view engines
-- Tải body-parser : " $ npm install body-parser "
-- Tải nodemon : " $ npm install --save-dev nodemon " tự động khởi động lại server khi lưu lại các sửa đổi 
+- Tải express bằng cú pháp: " npm install express --save " và đọc thêm về nó tại https://expressjs.com/
+- Tải ejs bằng cú pháp: " npm install ejs " là view engines
+- Tải body-parser : " npm install body-parser "
+- Tải nodemon : " npm install --save-dev nodemon " tự động khởi động lại server khi lưu lại các sửa đổi 
 - Tải Babel : dịch cú pháp mới trong lúc code gồm
 	+ Tải @babel/core : " npm install --save-dev @babel/core "
 	+ Tải @babel/node : " npm install --save-dev @babel/node "
@@ -23,3 +25,5 @@ Frameworks
 	+ để có thể sử dụng file .env
 	+ cú pháp : " npm i --save-exact dotenv@<'phiên bản'> " trong cmd
 - Tải msql2 : kết nối với mysql " npm install --save-exact mysql2 "
+- Tải bcrypt : dùng để mã hóa mật khẩu " npm install bcrypt "
+- Tải cookie-parser : xử lý với cookie bên client " npm install cookie-parser "

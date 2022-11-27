@@ -19,5 +19,5 @@ bên trong initWebRoute trước return
 - Trong thư mục controller sẽ chứa các file js để xử lý trong route
 
 - Trong file js của thư mục controller có : 
-	+ class có tên trùng với tên file js
+	+ class có tên trùng với tên file js cos tham số là " res, req "
 	+ xuất class ấy ra bên ngoài bằng " module.exports = <'tên class'> "

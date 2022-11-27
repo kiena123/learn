@@ -1,0 +1,12 @@
+0. Link 
+	+ video : " https://www.youtube.com/watch?v=rEV3OYFsUWw&list=PLncHg6Kn2JT4smWdJceM0bDg4YUF3yqLu&index=16 "
+	+ Tài liệu : " https://stackabuse.com/handling-file-uploads-in-node-js-with-expres-and-multer/ "
+			" https://expressjs.com/en/resources/middleware/multer.html "
+
+1. Download package : 
+	- " npm install --save-exact multer " có doc "npmjs.com/package/multer"
+	- " npm install --save-exact app-root-path " có doc là " npmjs.com/package/app-root-path "
+		+ B1 : " import path from 'path'; " và " var appRoot = require('app-root-path'); "
+		+ B2 : sử dụng appRoot để lấy đường link của trước file "src"
+
+	- " req.file " : chứa thông tin ảnh gửi lên từ form

@@ -1,4 +1,4 @@
-- Tạo 1 file .env trong đó có :
+- Tạo 1 file .env  cùng cấp với package.json trong đó có :
 	+ PORT = 8080
 	+ comment thì thêm # trước dòng
 
@@ -13,4 +13,4 @@
 	+ muốn sử dụng thì gõ cú pháp " process.env.<'tên biến trong .env'> "
 
 - Trong file viewEngine.js trong thư mục configs:
-	+ Thêm cú pháp khai báo để sử browser truy cập " app.use(express.static(<'đường dẫn thư mục'>)) "
+	+ Thêm cú pháp khai báo để sử browser truy cập " app.use(express.static(<'đường dẫn thư mục bắt đầu từ src'>)) "

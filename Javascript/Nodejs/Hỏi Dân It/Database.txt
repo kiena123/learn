@@ -1,2 +1,0 @@
-CRUD : 	create/read/update/delete
-Method :post/get/put/delete

@@ -1,0 +1,44 @@
+0. Link : 
+	+ video : " https://www.youtube.com/watch?v=S49mg5JulLA&list=PLncHg6Kn2JT4smWdJceM0bDg4YUF3yqLu&index=10 "
+	+ Tài liệu : " https://www.npmjs.com/package/mysql2 "
+
+1. Tạo database : 
+
+2. Kết nối database : 
+	- Tạo 1 file connectDB.js trong thư mục " configs " có :
+{
+	import mysql from 'mysql2';
+	const connection = mysql.createConnection({
+		host: <'tên host'>,
+		user: <'tên user'>,
+		database: <'tên database'>,
+	});
+
+	export default connection;
+}
+
+	*********************************
+	- Trong controller, từng hàm phải có "
+	let data = [];
+
+	connection.query(
+		<'câu query'>, 
+		function (err, results, fields){
+			results.map((row) => {
+				data.push({
+					id: row.id,
+					email: row.email, 
+					address: row.address,
+					firstName: row.firstName,
+					lastName: row.lastName
+				});
+			})
+
+			console.log(rows);
+		}
+	)
+
+"
+CRUD : 	create/read/update/delete
+Method :post/get/put/delete
+

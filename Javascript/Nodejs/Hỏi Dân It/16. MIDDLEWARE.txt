@@ -1,0 +1,18 @@
+0. Link : 
+	- video : " https://www.youtube.com/watch?v=3-dbNrDK_pA&list=PLncHg6Kn2JT4smWdJceM0bDg4YUF3yqLu&index=18 " 
+	- Tài liệu : " https://expressjs.com/en/guide/using-middleware.html " , 
+			" npmjs.com/package/morgan " 
+
+1. Các loại middleware hay gặp : 
+	- Logging middleware : thông tin của client gửi lên có những gì 
+	- Authentication check middleware : check quyền JWT
+	- middleware to parse JSON data from request : 
+	- Return 404 pages : 
+
+2. middleware : 
+	- Là 1 function có tham số " req, res, next "
+		+ Biến req
+		+ Biến res
+		+ Hàm next()
+
+3. morgan : ghi logs ra file

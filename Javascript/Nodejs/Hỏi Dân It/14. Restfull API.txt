@@ -1,0 +1,23 @@
+- Tạo 1 file api.js trong thư mục route trong file có : 
+	+ import express bằng cú pháp "import express from 'express' "
+	+ import APIController bằng cú pháp "import APIController from <'link'> "
+	+ Tạo 1 biến route bằng cú pháp " let router = express.Router(); "
+	+ tạo 1 biến initAPIRoute bằng cú pháp " 
+	const initAPIRoute = (app) => {
+		return app.use("/api/v1", router)
+	}
+	 "
+	+ nếu MVC sẽ thêm router bằng cú pháp " router.<'phương thức'>(<'đường dẫn'>,<'thuộc tính đã export từ controller'>) "
+bên trong initAPIRoute trước return và không cần viết ngoặc vì nó đã tự động truyền dữ liệu từ thằng cha vào thằng con
+	+ export initAPIRoute bằng cú pháp " export default initAPIRoute; "
+
+- Trong file server.js thêm : 
+	+ import initAPIRoute bằng " import initAPIRoute from <'chuỗi đường dẫn'> " 
+	+ Thêm callback sau callback của web.js 
+
+- Trong file js của thư mục controller có : 
+	+ class có tên trùng với tên file js 
+	+ trong class thì return trạng thái + chuỗi dữ liệu cú pháp " return res.status(200).json(<'object data'>) "
+	+ xuất class ấy ra bên ngoài bằng " module.exports = <'tên class'> " 
+
+- 
