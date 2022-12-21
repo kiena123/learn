@@ -1,0 +1,15 @@
+0. Link : 
+	- " https://www.youtube.com/watch?v=xld6DnypJ_Q&list=PL33lvabfss1wO1v5j9J5PHsbkQRlmo7KD&index=3 " 
+	
+1. Material ( giống như skin, lớp bọc ) : 
+* Thuật ngữ :
+	- Normalmap : Ghi đè hình lên hình Base 
+	- Offset : độ dịch 
+	- Smoothness : độ mịn, độ mượt 
+	- Tiling : 1 mặt sẽ hiển thị được bao nhiêu phần hình ảnh 
+
+* Cách làm : 
+	- Thêm Material : thêm ảnh rồi kéo vào thực thể 
+
+2. Model : 
+	- 

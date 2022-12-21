@@ -1,0 +1,6 @@
+0. Link :
+	- "  "
+
+1. Cách sử dụng : 
+	- Bước 1 : " import axios from 'axios'; "
+	- Bước 2 : " axios.<'phuong thuc'>(<'url api'>, { params: {<'tên param'> : <'Value param'> } })

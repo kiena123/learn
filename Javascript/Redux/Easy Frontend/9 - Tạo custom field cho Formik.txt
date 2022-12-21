@@ -1,0 +1,16 @@
+0. Link : 
+	- video " https://www.youtube.com/watch?v=LuNYJuyQxKE&list=PLeS7aZkL6GOvCz3GiOtvtDXChJRuebb7S&index=9 " 
+	- Formik "  "
+
+1. Cách sử dụng formik :
+	- install " npm install formik --save " và import 
+	- Sử dụng trả về 1 "
+	<Formik>
+		{formikProps => {
+			return (
+				<' Form giao diện JSX'>
+			)
+		}}
+	</Formik>
+
+"

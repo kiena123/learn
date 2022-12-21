@@ -1,0 +1,19 @@
+0. Link : 
+	- " https://www.youtube.com/watch?v=QsLZTryZ2as&list=PL33lvabfss1wO1v5j9J5PHsbkQRlmo7KD&index=2 "
+
+1. Tổng quan về Game object : 
+	- Tạo : Nhấn " Create " tại thẻ " Hierarchy " sẽ ra " GameObject " chỉ có tọa độ 
+		+ Position : Tạo độ vị trí
+		+ Rotation : Tạo độ xoay
+		+ Scale : Tỷ lệ / 1
+	- Xét con cho  thực thể : 
+		+ Bước 1 : Chọn thẻ con bên thẻ " Hierarchy "
+		+ Bước 2 : Giữ chuột trái và di chuyển đến cha của nó trong thẻ " Hierarchy " thì position của thằng con sẽ tính theo từ vị 
+			trí của thằng cha
+
+2. Thao tác dưới " File " góc trên - trái : 
+	- Hình bàn tay ( phím tắt : q ) : Thay đổi khung nhìn 
+	- 4 Hướng la bàn ( phím tắt : w ) : Thay đổi position của thực thể 
+	- Hình xoay tròn ( phím tắt : e ) : Thay đổi rotation của thực thể 
+	- Hình phóng to 4 góc ( phím tắt : r ) : Thay đổi scale của thực thể 
+	- Hình vuông có tâm ( phím tắt : t ) :

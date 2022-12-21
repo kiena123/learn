@@ -1,0 +1,63 @@
+Tải react-router-dom : " npm install react-router-dom "
+
+1. Tạo thẻ wrap nhanh : 
+	- Cách 1:
+		+ Tạo thẻ wrap nhanh chóng " Ctrl + Shift + P "
+		+ Chọn " Wrap with Abbreviation " 
+		+ Nhập tên tag
+
+	- Cách 2 : 
+		+ Tải extention vscode " htmltagwrap "
+		+ Bôi đen con của wrap và nhấn tổ hợp " Alt + W "
+
+2. Các thẻ của Route : 
+	- " Router " : 
+		+ Tác dụng : 
+
+	- " Routes " : 
+		+ Tác dụng : Dùng để chuyển trang với " path " khác nhau thì sẽ có element tương ứng
+
+	- " Route " : 
+		+ Tác dụng : 
+
+3. Bước xây dựng Route :
+	- Bước 1 : import vào file App.js "
+	import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+"
+	- Bước 2 : Cho component App trả về như sau "
+	return (
+		<Router>
+			<div className = 'App'>
+				<Routes>
+					<Route path=<' chuỗi url ' element={<' Component layout '>}>
+				</Routes>
+			</div>
+		</Router>
+	)
+
+"
+	- Bước 3 : Tạo thư mục routes trong " src " tạo file index.js có nội dung "
+	const publicRoutes = [
+		{ path: <'duong dan url'>, component : <" 1 (hàm) component"> },
+	]
+
+	const privateRoutes = [
+
+	]
+
+
+	export { publicRoutes, privateRoutes }
+"
+
+	- Bước 4 : thêm " import { publicRoutes } from <' đường dẫn đến index.js trong routes '> và sử trong Routes component "
+	<Routes>
+		{ publicRoutes.map( ( route, index) => {
+			const Page = route.component
+			return <Route key={index} path={route.path} element={<Page />}>
+		})}
+
+	</Routes>
+"
+
+4. Bước cấu hình tải layout 
+	- Trong thư mục component tạo thư mục Layout có file DefaultLayout

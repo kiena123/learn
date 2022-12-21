@@ -1,0 +1,12 @@
+0. Link : 
+	- " https://youtube.com/watch?v=IcJ0cjWvFs4&list=PL33lvabfss1wO1v5j9J5PHsbkQRlmo7KD&index=4 " 
+
+1. Tổng quan Camera : 
+* Thuật ngữ : 
+	- Clear Flags : 
+	- Clipping Planes : Xét vùng để camera render được thực thể 
+	- Culling Mask : Những thứ camera có thẻ render cho người dùng thấy 
+	- Depth : Số càng lớn thì độ ưu tiên được render c
+	- Projection : Kiểu view của camera 
+	- Viewport Rect : 
+	-

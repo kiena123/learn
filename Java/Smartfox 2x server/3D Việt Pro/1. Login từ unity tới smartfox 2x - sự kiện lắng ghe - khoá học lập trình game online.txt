@@ -1,0 +1,59 @@
+0. Link : 
+	- [0] " https://www.youtube.com/watch?v=e4eSBd-SXaQ&list=PL-G8CtGdaXG_a9eWBml0mVe_pl7GMk3Fv&index=2 "
+	- [1] " https://www.smartfoxserver.com/download/sfs2x#p=client " 
+
+1. Thực hành : 
+	- Tạo thư mục " Scripts " có con là file " Connector.cs " từ ứng dụng unity
+	- Tạo thư mục " Plugins " có file con trong thư mục " unity-WebLG " download từ url [1] 
+	
+* Trong file " Connector.cs " của thư mục " Assets/Scripts " 
+	- Thêm thư viện như sau " 
+	using Sfs2X;
+	using Sfs2X.Core;
+	using System;
+"
+	- Khởi tạo đối tượng trong class Connector " private Smartfox sfs; "
+	- Khởi tạo đối tượng " defaultHost, defaultTcpPort, defaultWsPort " như sau :
+" 
+		private string defaultHost = "127.0.0.1";		// Default host
+		private int defaultTcpPort = 9933;			// Default TCP port
+		private int defaultWsPort = 8080;			// Default WebSocket port 
+"
+	- Trong hàm " Update() " thêm "
+	if (sfs != null)
+		sfs.ProcessEvents();
+"
+	- Tạo hàm sự hiện nút đăng nhập " Login_click() " có nội dung "
+	if (sfs == null || !sfs.IsConnected ){
+		sfs = new SmartFox();
+
+		// Có thiết lập vùng an toàn hay không 
+		sfs.ThreadSafeMode = true;
+		// Sự kiện kết nối 
+		sfs.AddEventListener( SFSEvent.CONNECTION, OnConnection );
+		// Sự kiện mất kết nối 
+		sfs.AddEventListener( SFSEvent.CONNECTION_LOST, OnConnectionLost );
+
+		ConfigData cfg = new ConfigData();
+		cfg.Host = defaultHost
+		cfg.Port = Convert.ToInt32(defaultTcpPort)
+		cfg.Zone = "BasicExamples"
+		cfg.Debug = true;
+
+		sfs.Connect(cfg);
+	} else {
+		sfs.Disconnect();
+	}
+"
+
+	- Tạo hàm " OnConnection(BaseEvent evt) " với nội dung "
+	if ((bool)evt.Params["success"]){
+		Debug.Log("Login successful");
+	} else {
+		Debug.Log("Login error");
+	}
+"
+
+	- Tạo hàm " OnConnectionLost() " với nội dung "
+
+"

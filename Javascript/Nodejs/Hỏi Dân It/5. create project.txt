@@ -15,5 +15,5 @@
 
 - Tạo 1 thư mục views để chứa các file view engine 
 - Tạo 1 thư mục configs để chứa
-- Tạo 1 thư mục route bên trong thư mục src 
-- Tạo 1 thư mục controller bên trong thư mục src 
+- Tạo 1 thư mục routes bên trong thư mục src 
+- Tạo 1 thư mục controllers bên trong thư mục src 

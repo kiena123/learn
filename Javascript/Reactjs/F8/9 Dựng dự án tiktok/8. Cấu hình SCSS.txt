@@ -1,0 +1,16 @@
+0. link :
+	- video : " https://www.youtube.com/watch?v=VkMAlrn3-Ww&list=PL_-VfJajZj0XHWBAxzGh1bZPACRbjbro3&index=8 "
+
+1. Thư viện cần dùng : 
+	- classnames : " npm install classnames " : 
+	
+2. Cách dùng : 	
+	* Classnames :
+		- import classnames " 
+	import classNames from 'classnames/bind' 
+	import styles from <'url scss'>
+
+	const cx = classNames.bind(styles)
+"
+
+	- Khi dùng thì sẽ cho tên class vào hàm cx() ví dụ: cx('wrapper')

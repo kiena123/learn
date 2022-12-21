@@ -1,0 +1,11 @@
+0. Link : 
+	- " https://www.youtube.com/watch?v=MGj9GKoK8O4&list=PL33lvabfss1wO1v5j9J5PHsbkQRlmo7KD "
+
+0. Tổng quan : 
+	- Game : Nơi thể hiện giao diện ki chạy chương trình
+	- Hierachy : Nơi lưu các thứ mà lập trình viên tạo ra  
+	- Inspector : Là thẻ thuộc tính ( giống thẻ property )
+	- Navigation : 
+	- Project : Chứa các assets ( tài nguyên ) của người lập trình 
+	- Scene : Nơi lập trình viên thao tác kéo thả 
+	

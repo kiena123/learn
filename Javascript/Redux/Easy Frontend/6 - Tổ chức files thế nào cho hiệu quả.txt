@@ -1,0 +1,31 @@
+0. Link : 
+	- video : " https://www.youtube.com/watch?v=mAhUJdf0Kug&list=PLeS7aZkL6GOvCz3GiOtvtDXChJRuebb7S&index=6 "
+	- github : " https://github.com/paulnguyen-mn/redux-photo-app "
+
+1. 
+	- Suspense (" import { Suspense } from 'react' ") : 
+		+ thường đi cùng React.lazy() 
+		+ Dùng để show khi React.lazy() đang load (màn hình chờ)
+
+	- useRouteMatch (" import { useRouteMatch } from 'react-router-dom'") : 
+		+ đưa ra thông tin Router trong đó có url cha 
+
+2. Tổ chức folder : ví dụ "
+src
+	assets
+		images
+		styles ( global styles )
+	components (shared components)
+	features
+		Photo
+			components
+				PhotoList
+				PhotoCard
+				PhotoForm
+			pages
+				MainPage
+				AddEditPage
+			photoSlice.js
+			index.js
+
+"

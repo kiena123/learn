@@ -1,0 +1,42 @@
+0. link : 
+	- video : " https://www.youtube.com/watch?v=N_J3blGHI0w&list=PLeS7aZkL6GOvCz3GiOtvtDXChJRuebb7S&index=4 "
+
+1. Các bước tạo redux
+	- Bước 1 : Tạo Reducer là hàm có tham số đầu vào là (state, action) " 
+	const aReducer = (state, action) => {
+		switch (action.type){
+			case <' key action '> : {
+				<'nội dung xử lý '>
+			}
+
+			default : 
+				return state;
+		}
+	}
+" và export reducer ấy " export default aReducer; "
+
+	- Bước 2 : Tổng hợp các reducer thành 1 reducerRoot bằng "
+	const rootReducer = combineReducers({
+		<'key'> : <' danh sach các reducer '>
+	})
+" và export rootReducer ấy " export default rootReducer; "
+
+	- Bước 3 : Tạo store (  ) có nội dung " 
+	import { createStore } from "redux"
+	import rootReducer from "<' đường dẫn '>"
+	
+	const store = createStore(rootReducer);
+	
+"
+
+2. Setup redux provider vào ngoài <App />
+	- Bước 1 : import { Provider } from 'react-redux'
+	- Bước 2 : Cho <Provider store={ <'biến store'>}></Provider> bao bọc <App />
+
+
+3. Connect to redux store from component
+	- Bước 1 : " import { useSelector } from 'react-redux'"
+	- Bước 2 : useSelector() với tham số như ví dụ "
+	const aReducerList = useSelector( state => state.<'key'>.) 
+"
+	- Bước 3 : useDispatch() dùng để giao tiếp với store
