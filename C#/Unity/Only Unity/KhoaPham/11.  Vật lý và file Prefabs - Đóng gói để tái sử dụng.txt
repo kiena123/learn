@@ -1,0 +1,12 @@
+0. Link : 
+	- " https://www.youtube.com/watch?v=Ua3zmYUQD7s&list=PLh8TMSRS9sx92igoetAydMzQB2r2OSRSf&index=11 " 
+
+1. Va chạm trong Unity : 
+	- Thêm trọng lực cho Game Object : " Rigidbody 2D " trong " Physics 2D "
+		+ Fixed Angle : Không muốn  Game Object bị xoay khi chạm vào vật thể nào khác 
+	- Loại bỏ dư thừa trong ảnh chọn " Edit Collider "
+	- Tạo bao phủ vật lý ( Bề mặt ngang ) cho Game Object : " Polygon Collider 2D " trong " Physics 2D "
+	- Tạo bao phủ vật lý ( Bề mặt ngang ) cho Game Object : " Box Collider 2D " trong " Physics 2D "
+	- Loại bỏ dư thừa trong ảnh chọn " Edit Collider "
+
+1. Prefabs trong Unity : dùng để lưu trữ các GameObject để tái sử dugnj 

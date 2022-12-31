@@ -1,0 +1,5 @@
+0. Link : 
+	- " https://www.youtube.com/watch?v=IU5Bzr8z2So&list=PL9YFzEkTXjbPZ1M0t_D-Ewh4iTMFBY5BL&index=3 "
+
+1. Ham : 
+	- Transform.position.x : lấy giá trị x của đối tượng sử dụng script

@@ -1,0 +1,10 @@
+0. Link : 
+	- " https://www.youtube.com/watch?v=g1rbwMTYr4Q&list=PLh8TMSRS9sx92igoetAydMzQB2r2OSRSf&index=2 "
+
+1. Cú pháp : 
+	- " int[] <'tên mảng'> = new int[<'số lượng mảng'>] "
+		+ khi có số lượng mảng thì sẽ không thể thay đổi thêm số lượng của mảng
+
+2. 1 số hàm của c# : 
+	- Random.Range(10, 100) : ngẫu nhiên 
+

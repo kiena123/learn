@@ -1,0 +1,8 @@
+0. Link : 
+	- [0] : " https://www.youtube.com/watch?v=-PqKrAbNi7g "
+
+1. Chuẩn bị :
+	- Tải nodejs
+	- Tạo tài khoảng mongooDB
+	- Gõ vào cmd của project " npm init " và " npm i express ejs body-parser mongoose socket.io "
+	- Tải "mongoose-sequence" : để tự động tăng lên số trong mongoDB

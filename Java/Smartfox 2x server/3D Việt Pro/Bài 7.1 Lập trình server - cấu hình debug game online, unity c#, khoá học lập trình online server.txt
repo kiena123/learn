@@ -1,0 +1,18 @@
+0. Link : 
+	- [0] : " https://www.youtube.com/watch?v=sTx_Sc29xks&list=PL-G8CtGdaXG_a9eWBml0mVe_pl7GMk3Fv&index=9 "
+
+1. Khởi tạo project : 
+	- Tạo project java 
+	- Tạo các package trong thư mục src 
+		+ casino.demo.handler : 
+
+		+ casino.demo.simulator : 
+
+		+ casino.demo.utils : 
+
+		+ casino.handler : 
+			. Đóng vai trò quan trọng nhất 
+
+2. Biên dịch project sang file jar : 
+	- chọn Window -> Show View -> Ant in eclipse 
+	- 

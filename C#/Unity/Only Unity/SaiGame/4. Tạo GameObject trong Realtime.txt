@@ -1,0 +1,5 @@
+0. Link : 
+	- " https://www.youtube.com/watch?v=HY5-gv1rRzo&list=PL9YFzEkTXjbPZ1M0t_D-Ewh4iTMFBY5BL&index=4 "
+
+1. Khởi tạo biến GameObject : 
+	- Câu lệnh " GameObject npc = new GameObject(); " trong thẻ c#

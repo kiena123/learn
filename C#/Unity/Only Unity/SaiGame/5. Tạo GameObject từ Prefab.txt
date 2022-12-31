@@ -1,0 +1,9 @@
+0. Link : 
+	- " https://www.youtube.com/watch?v=dgzFEyiP8VY&list=PL9YFzEkTXjbPZ1M0t_D-Ewh4iTMFBY5BL&index=5 "
+
+1. Khởi tạo GameObject : 
+	- Chuột phải vào thẻ " Hierachy " chọn " Create Empty "
+
+2. Các câu lệnh :
+* Hàm : 
+	- Instantiate() : 

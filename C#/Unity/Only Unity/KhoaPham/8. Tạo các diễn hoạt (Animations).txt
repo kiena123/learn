@@ -1,0 +1,9 @@
+0. Link : 
+	- " https://www.youtube.com/watch?v=I3oFo7U_3J0&list=PLh8TMSRS9sx92igoetAydMzQB2r2OSRSf&index=8 "
+
+1. 
+	- Chuẩn bị ảnh và cắt ảnh 
+	- Mở thẻ " Animation " và thẻ " Animator " trong thẻ " Window "
+	- Tạo clip ( animation ) bằng cách nhấn " Create New Clip " và thêm các ảnh vào animation vừa tạo 
+	- Tạo parameter trong Animator để có thể xử lý điều kiện chuyển giao giữa các animation với nhau 
+	- Tạo tham chiếu giữa các animation bằng cách nhấn chuột phải, chọn " Make Transition " và chọn Animation đích 

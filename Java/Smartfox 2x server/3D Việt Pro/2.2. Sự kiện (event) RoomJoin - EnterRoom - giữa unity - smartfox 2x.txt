@@ -1,0 +1,6 @@
+0. Link : 
+	- [0] : " https://www.youtube.com/watch?v=-H6FAl7o-fA&list=PL-G8CtGdaXG_a9eWBml0mVe_pl7GMk3Fv&index=4 "
+	
+1. Các sự kiện của Room : 
+* Unity (SFSEvent) : 
+	-  
