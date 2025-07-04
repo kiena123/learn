@@ -1,0 +1,131 @@
+Phím tắt chung
+- Ctrl + O : Mở bản vẽ có sẵn trong máy
+- Ctrl + N : Tạo mới một bản vẽ
+- Ctrl + P : Mở hộp thoại in ấn
+- Ctrl + S : Lưu bản vẽ
+- Ctrl + Q : Thoát
+- Ctrl + A : Chọn tất cả các đối tượng 
+- Ctrl + C : Sao chép đối tượng 
+- Ctrl + V : Dán đối tượng 
+- Ctrl + Y : Làm lại hành động cuối 
+- Ctrl + X : Cắt đối tượng 
+- Ctrl + Z : Hoàn tác hành động cuối cùng 
+- Ctrl + D : Chuyển chế độ phối hợp màn hình hiển thị 
+- Ctrl + F : Bật/tắt chế độ truy bắt điểm Snap 
+- Ctrl + G : Bật/tắt màn hình lưới 
+- Ctrl + H : Bật/tắt chế độ lựa chọn Group 
+- Ctrl + Shift + C : Sao chép tới Clicpboard với mốc điểm 
+- Ctrl + Shift + V : Dán dữ liệu theo khối 
+- Ctrl + Shift + Tab : Chuyển sang bản vẽ trước 
+- Ctrl + Shift + H : Bật/tắt toàn bộ công cụ trên màn hình làm việc 
+- Ctrl + Shift + I : Bật/tắt điểm hạn chế trên đối tượng 
+- Ctrl + Page Down : Chuyển sang tab tiếp theo trong bản vẽ hiện hành 
+- Ctrl + Page Up : Chuyển sang tab trước đó trong bản vẽ hiện hành 
+- Ctrl + Tab : Chuyển đổi qua lại giữa các Tab 
+- Ctrl + [ Hủy bỏ lệnh hiện hành ESC ]:  Hủy bỏ lệnh hiện hành 
+- Ctrl + 0 : Làm sạch màn hình 
+- Ctrl + 1 : Bật thuộc tính của đối tượng 
+- Ctrl + 2 : Bật/tắt cửa sổ Design Center 
+- Ctrl + 3 : Bật/tắt cửa tool Palette 
+- Ctrl + 4 : Bật/tắt cửa sổ Sheet Palette 
+- Ctrl + 6 : Bật/tắt cửa sổ liên kết tới file bản vẽ gốc. 
+- Ctrl + 7 : Bật/tắt cửa sổ Markup Set Manager 
+- Ctrl + 8 : Bật nhanh máy tính điện tử 
+- Ctrl + 9 : Bật/tắt cửa sổ Command 
+- F1 : Bật/tắt cửa sổ trợ giúp 
+- F2 : Bật/tắt cửa sổ lịch sử command 
+- F3 : Bật/tắt chế độ truy bắt điểm Snap 
+- F4 : Bật/tắt chế độ truy bắt điểm 3D 
+- F6 : Bật/tắt hệ trục tọa độ người dùng UCS 
+- F7 : Bật/tắt màn hình lưới 
+- F8 : Bật/tắt chế độ cố định phương đứng, ngang của nét vẽ 
+- F9 : Bật/tắt chế độ truy bắt điểm chính xác 
+- F10 : Bật/tắt chế độ polar tracking 
+- F11 : Bật/tắt chế độ truy bắt điểm thường trú Object snap 
+- F12 : Bật/tắt chế độ hiển thị thông số con trỏ chuột dynamic input
+
+Nhóm lệnh quản lý : 
+- CH/PR ( PROPERTIES ) : Hiệu chỉnh các thuộc tính, thông số kỹ thuật 
+- LA ( Layer ) : Quản lý hiệu chỉnh layer 
+- OP ( Options ) : Quản lý cài đặt mặc định 
+- SE ( Settings ) : Quản lý cài đặt bản vẽ hiện hành 
+- MV ( Setup ) : Thiết lập các thông số kỹ thật của 1 bản vẽ
+
+Nhóm lệnh vẽ hình khối đơn giản : 
+- A ( ARC ) : Lệnh vẽ cung tròn trong AutoCad 
+- C ( CIRCLE ) : Lệnh vẽ đường tròn 
+- L ( LINE ) : Lệnh vẽ đường thẳng. 
+- EL ( ELLIPSE ) : Vẽ hình Elip. 
+- PL ( PLINE ) : Lệnh vẽ đa tuyến. 
+- POL ( POLYGON ) : Vẽ đa giác đều khép kín. 
+- REC ( RECTANGLE ) : Vẽ hình chữ nhật
+
+Nhóm lệnh kích thước : 
+- D ( DIMSTYLE) : Lệnh này giúp tạo kiểu kích thước. 
+- LI ( DIMLINEAR ) : Ghi kích thước thẳng đứng hay nằm ngang 
+- DAL ( DIMALIGNED ) : Lệnh hỗ trợ ghi kích thước xiên. 
+- DAN ( DIMANGULAR ) : Lệnh ghi kích thước góc. 
+- DCO ( DIMCONTINUE ) : Lệnh ghi kích thước nối tiếp. 
+- DBA ( DIMBASELINE ) : Lệnh ghi kích thước song song. 
+- DDI ( DIMDIAMETER ) : Lệnh ghi kích thước đường kính. 
+- DRA ( DIMRADIU ) : Lệnh ghi kích thước bán kính.
+
+Nhóm lệnh in ấn :
+- PRE ( PREVIEW	) : Hiển thị chế độ xem một bản vẽ trước khi đã ra in 
+- PRINT ( PLOT ) : Đưa ra hộp thoại từ đó có thể vẽ một bảng vẽ bằng máy vẽ, máy in hoặc file 
+- MV ( MVIEW ) : Tạo và kiểm soát các chế độ xem bố cục
+
+Nhóm lệnh tắt khác : 
+- T ( MTEXT ) : Tạo ra 1 đoạn văn bản 
+- CO, CP ( COPY ) : Lệnh sao chép đối tượng. 
+- M ( MOVE ) : Lệnh di chuyển đối tượng được chọn 
+- RO ( ROTATE ) : Xoay các đối tượng được chọn xung quanh 1 điểm 
+- P ( PAN ) : Di chuyển cả bản vẽ / Di chuyển cả bản vẽ từ điểm một sang điểm thứ 2 
+- Z ( ZOOM ) : Phóng to / Thu nhỏ 
+- SC ( SCALE ) : Phóng to, thu nhỏ theo tỷ lệ 
+- AL ( ALIGN ) : Lệnh di chuyển, xoay hoặc scale 
+- AR ( ARRAY ) : Lệnh sao chép đối tượng thành dãy trong bản vẽ 2D 
+- ATT ( ATTDEF ) : Định nghĩa thuộc tính 
+- ATE ( ATTEDIT ) : Lệnh hiệu chỉnh thuộc tính của Block 
+- B ( BLOCK ) : Lệnh tạo Block 
+- BO ( BOUNDARY ) : Lệnh tạo đa tuyến kín 
+- BR ( BREAK ) : Lệnh cắt xén một phần đoạn thẳng giữa hai điểm chọn. 
+- CHA ( ChaMFER ) : Lệnh vát mép các cạnh 
+- D ( DIMSTYLE ) : Lệnh này giúp tạo kiểu kích thước. 
+- DED ( DIMEDIT ) : Lệnh chỉnh sửa kích thước. 
+- DI ( DIST ) : Đo khoảng cách và góc giữa 2 điểm 
+- DIV ( DIVIDE ) : Chia đối tượng thành các phần bằng nhau 
+- DO ( DONUT ) : Lệnh vẽ hình vành khăn. 
+- DOR ( DIMORDINATE ) : Tọa độ điểm 
+- DT ( DTEXT ) : Ghi văn bản 
+- E ( ERASE ) : Lệnh xoá đối tượng. 
+- F ( FILLET ) : Tạo góc lượn/ Bo tròn góc. 
+- H ( BHATCH / HATCH ) : Lệnh vẽ mặt cắt 
+- HI ( HIDE ) : Tạo lại mô hình 3D với các đường bị khuất 
+- I ( INSERT ) : Chèn khối/ Chỉnh sửa khối được chèn 
+- IN ( INTERSECT ) : Tạo ra phần giao của hai đối tượng. 
+- LE ( LEADER ) : Tạo đường dẫn chú thích 
+- LW ( LWEIGHT ) : Khai báo hay thay đổi chiều dày nét vẽ 
+- LO ( LAYOUT ) : Tạo Layout 
+- LT ( LINETYPE ) : Hiển thị hộp thoại tạo và xác lập các kiểu đường 
+- LTS ( LTSCALE ) : Xác lập tỉ lệ đường nét 
+- MA ( MATCHPROP ) : Sao chép các thuộc tính từ 1 đối tượng này sang 1 hay nhiều đối tượng khác 
+- MI ( MIRROR ) : Lệnh lấy đối xứng quanh một trục. 
+- MS ( MSPACE ) : Chuyển từ không gian giấy sang không gian mô hình 
+- O ( OFFSET ) : Lệnh sao chép song song. 
+- PS ( PSPACE ) : Chuyển từ không gian mô hình sang không gian giấy 
+- REC ( RECTANGLE ) : Vẽ hình chữ nhật 
+- REG ( REGION ) : Tạo miền 
+- RR ( RENDER ) : Hiện thị vật liệu, cây cảnh, đèn,…đối tượng 
+- S ( StrETCH ) : Kéo dài/ thu ngắn/ tập hợp đối tượng 
+- SHA ( SHADE ) : Tô bong đối tượng 3D 
+- SU ( SUBTRACT ) : Phép trừ khối 
+- TH ( THICKNESS ) : Tạo độ dày cho đối tượng 
+- TOR ( TORUS ) : Vẽ Xuyến 
+- TR ( TRIM ) : Cắt xén đối tượng 
+- UN ( UNITS ) : Định đơn vị bản vẽ 
+- UNI ( UNION ) : Phép cộng khối 
+- VP ( DDVPOINT ) : Xác lập hướng xem 3 chiều 
+- WE ( WEDGE ) : Vẽ hình nêm/chêm 
+- X ( EXPLODE ) : Phân rã đối tượng 
+- XR ( XREF ) : Tham chiếu ngoại vào các File bản vẽ
